@@ -14,12 +14,12 @@ Java.perform(function() {
   
   //Include params in function if expected like function (param1,param2) 
   target.method.implementation = function () {
-    send('We are now in method')
+    send('We are now in method');
     
     //Modify code as you like
     
     //Include params in this call if it is expected
-    this.method()
+    this.method();
     };
 });
 """
