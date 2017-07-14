@@ -6,7 +6,7 @@ def on_message(message,data):
     else:
         print (message)
 
-"""Frida nagic goes into jscode"""
+"""Frida magic goes into jscode"""
 
 jscode = """
 Java.perform(function() {
