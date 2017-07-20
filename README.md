@@ -1,7 +1,7 @@
 # FridaAndroidTemplate
 Python template for injecting into Android apps using Frida
 
-## For native:
+## For injecting into native libraries/code:
 
 jscode = """
 Interceptor.attach(Module.findExportByName('native-lib.so','x'), {
@@ -24,4 +24,4 @@ See https://www.frida.re/docs/modes/#embedded
    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V </code>
 4. Add <uses-permission android:name="android.permission.INTERNET" /> to the manifest if the app doesn't already have the INTERNET
    permission (since firda needs to use a socket communicate between server and CLI)
-5. Repackage with apktool, and sign the apk. Change settings on phone to install from untrusted sources. 
+5. Repackage with apktool, and sign the apk. Change settings on phone to install from untrusted sources.  
